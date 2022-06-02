@@ -8,10 +8,15 @@ img {display: block;}
 
 .link {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 .list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 .buttons {
   font-family: inherit;
   cursor: pointer;
@@ -114,17 +119,35 @@ body {
 .contacts-item + .contacts-item {margin-left: 50px;
 }
 
-.contacts {
-  color: var(--text-color);  
+.contacts-link {
+  color: var(--text-color);
+  fill:currentColor;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-envelope {
+  height: 12px;
+  width: 16px;
+
+  margin-right: 10px; 
+}
+
+.icon-phone {
+ height: 16px;
+ width: 10px;
+
+ margin-right: 10px; 
 }
 
 .header .contacts {padding-top: 32px;
   padding-bottom: 32px;}
 
-.nav-list .link:hover,
-.nav-list .link:focus,
-.contacts:hover,
-.contacts:focus {
+.nav-list .menu-link:hover,
+.nav-list .menu-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -136,11 +159,16 @@ body {
 
 .hero {
   background-color: var(--extra-background-color);
-
+  background-image: url(../images/images-main-page/img-overlay.png), url(../images/images-main-page/hero-img.jpg);
+  max-height: 600px;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
+
   padding-top: 200px;
   padding-bottom: 200px;
-
+  margin: 0 auto;
 }
 
 .hero-header {
@@ -216,7 +244,7 @@ margin-left: var(--typical-margine);
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
 
-.specialisation-header {
+.section-header {
 
 font-weight: 700;
 font-size: 36px;
@@ -260,7 +288,7 @@ flex-basis: calc((100% - 90px) / 4);
 }
 
 .team-card + .team-card {
-  margin-left: var(--typical-value);
+  margin-left: var(--typical-margine);
 }
 
 .members-description {

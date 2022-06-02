@@ -15,13 +15,21 @@
         <nav class="menu">
             <a href="./index.html" class="logo link">Web<span class="logo-part">Studio</span></a>
             <ul class="list nav-list">
-                <li class="item"><a href="./index.html" class="link current-page">Студия</a></li>
-                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="item"><a href="" class="link">Контакты</a></li>
+                <li class="item"><a href="./index.html" class="menu-link link current-page">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="menu-link link">Портфолио</a></li>
+                <li class="item"><a href="" class="menu-link link">Контакты</a></li>
             </ul>
             <ul class="contacts-list list">
-              <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a></li>
-              <li class="contacts-item"><a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a></li>
+              <li class="contacts-item">
+                  <a href="mailto:info@devstudio.com" class="contacts-link link">
+                      <svg class="icon-envelope"><use href="./symbol-defs.svg#icon-envelope"></use></svg>
+                      <span>info@devstudio.com</span>
+                    </a></li>
+              <li class="contacts-item">
+                  <a href="tel:+380961111111" class="contacts-link link">
+                      <svg class="icon-phone"><use href="./symbol-defs.svg#icon-phone"></use></svg>
+                      <span>+38 096 111 11 11</span>
+                    </a></li>
         </ul>
         </nav>
         </div>
@@ -41,20 +49,32 @@
         <section class="advantages section-padding">
          <div class="container">
             <h2 class="hidden-title">Преимущества</h2>
-            <ul class="list">
+            <ul class="advantages-list list">
                 <li class="advantages-item">
+                    <svg class="advantages-icons" width="270" height="120">
+                        <use href="./symbol-defs.svg#icon-feature-1"></use>
+                    </svg>
                     <h3 class="advantages-header">Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
                 <li class="advantages-item">
+                    <svg class="advantages-icons" width="270" height="120">
+                        <use href="./symbol-defs.svg#icon-feature-2"></use>
+                    </svg>
                     <h3 class="advantages-header">Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
                 <li class="advantages-item">
+                    <svg class="advantages-icons" width="270" height="120">
+                        <use href="./symbol-defs.svg#icon-feature-3"></use>
+                    </svg>
                     <h3 class="advantages-header">Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
                 <li class="advantages-item">
+                    <svg class="advantages-icons" width="270" height="120">
+                        <use href="./symbol-defs.svg#icon-feature-4"></use>
+                    </svg>
                     <h3 class="advantages-header">Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -65,7 +85,7 @@
         <!-- Чем мы занимаемся -->
         <section class="specialisation section-padding">
             <div class="container">
-            <h2 class="specialisation-header">Чем мы занимаемся</h2>
+            <h2 class="section-header">Чем мы занимаемся</h2>
             <ul class="list">
                 <li class="specialisation-item"><img src="./images/images-main-page/box1.jpg" alt="Написание кода" width="370"></li>
                 <li class="specialisation-item"><img src="./images/images-main-page/box2.jpg" alt="Адаптация контента под смартфон" width="370"></li>
@@ -111,6 +131,44 @@
             </div>
         </section>
 
+  <!-- Постоянные клиенты -->
+        <section class="section regular-clients">
+<div class="container">
+    <h2 class="section-header">Постоянные клиенты</h2>
+    <ul>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+        <li>
+            <svg class="clients-icon">
+                <use href="./symbol-defs.svg"></use>
+            </svg>
+        </li>
+    </ul>
+</div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
