@@ -154,7 +154,7 @@ body {
 
 .hero {
   background-color: var(--extra-background-color);
-  background-image: url(../images/images-main-page/img-overlay.png), url(../images/images-main-page/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images-main-page/hero-img.jpg);
   max-height: 600px;
   max-width: 1600px;
   background-repeat: no-repeat;
@@ -411,6 +411,39 @@ color: var(--secondary-main-color)
   color: var(--accent-color);
 }
 
+/* ПРИСОЕДИНЯЙТЕСЬ (FOOTER) */
+
+.footer > .container {
+  display: flex;
+}
+
+.footer-second-flex {
+  width: 100px;
+
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+.footer-communities-header {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+.footer-second-flex .communities-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color:var(--secondary-main-color);
+}
+
+.footer-second-flex .communities-item:hover, .footer-second-flex .communities-item:focus {
+  background-color: var(--accent-color);
+}
+
 /* СТРАНИЦА ПОРТФОЛИО */
 
 .projects {
@@ -447,6 +480,7 @@ padding: 6px 22px;
 .filter-buttons:hover, .filter-buttons:focus {
     color: var(--secondary-main-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px #0000001F,  0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
 }
 
 .current-button {color: var(--secondary-main-color);
@@ -471,6 +505,10 @@ background-color: var(--accent-color);
 
 .cards:nth-child(3n + 1) {
   margin-left: 0;}
+
+.cards:hover, .cards:focus {
+box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+}
 
 .card-description {
   padding: 20px 24px;
