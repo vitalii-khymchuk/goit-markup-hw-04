@@ -218,6 +218,17 @@ body {
 margin-left: var(--typical-margine);
 }
 
+.advantages-svg-wrapper {
+  height: 120px;
+  width: 100%;
+  background-color: #F5F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -337,6 +348,10 @@ margin-top: 10px;
   align-items: center ;
 }
 
+.communities-item + .communities-item {
+  margin-left: 10px;
+}
+
 .communities-icon-svg {
   display: block;
   fill: currentColor;
@@ -359,12 +374,19 @@ margin-top: 10px;
   color: #AFB1B8;
   border: 1px solid currentColor;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+  flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-list-item + .clients-list-item {
   margin-left: var(--typical-margine);
+}
+
+.clients-list-item .link {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 92px;
+ width: 100%;
 }
 
  .clients-icon-svg {
